@@ -23,8 +23,8 @@ El sistema está compuesto por dos Arduinos que colaboran de la siguiente manera
 
 - **Arduino Uno (Esclavo)**:  
   Recibe la alerta por comunicación serial Xbee.  
-  Controla dos motores brushless con potenciómetros para ajustar su velocidad.  
-  Si se recibe una alerta, los motores se detienen inmediatamente como medida de seguridad.  
+  Controla un motor brushless con potenciómetros para ajustar su velocidad.  
+  Si se recibe una alerta, el motor se detienen inmediatamente como medida de seguridad.  
   Para reactivar el sistema tras una alerta: reinicia el Arduino Uno.
 
 ## 🛠️ Tecnologías Utilizadas
@@ -33,7 +33,7 @@ El sistema está compuesto por dos Arduinos que colaboran de la siguiente manera
 - Arduino Uno
 - Encoder rotatorio
 - Módulos Xbee
-- Motores Brushless
+- Motor Brushless
 - Potenciómetros
 - Lenguaje: C++ (Arduino)
 
@@ -44,7 +44,7 @@ graph TD;
   Encoder -->|Ángulo| Mega[Arduino Mega]
   Mega -->|Alerta + Datos| XbeeTx[Xbee Transmisor]
   XbeeRx[Xbee Receptor] --> Uno[Arduino Uno]
-  Uno --> Motores[Motores Brushless]
+  Uno --> Motor[Motor Brushless]
   Uno --> Pot[Potenciómetros]
 ```
 
@@ -53,7 +53,7 @@ graph TD;
 1. Conecta los componentes según el diagrama electrónico.
 2. Carga el código correspondiente en cada Arduino:
    - Mega: medición y alerta.
-   - Uno: control de motores y recepción.
+   - Uno: control de motor y recepción.
 3. Configura los módulos Xbee con los mismos parámetros de red.
 4. Abre el monitor serial del Mega para establecer los límites de ángulo.
 
@@ -62,14 +62,7 @@ graph TD;
 1. Enciende ambos Arduinos.
 2. Ajusta los límites del ángulo desde el monitor serial del Arduino Mega.
 3. Observa el comportamiento:
-   - Si el ángulo se mantiene dentro del rango: los motores funcionan normalmente.
-   - Si el ángulo se sale del rango: se detienen los motores.
+   - Si el ángulo se mantiene dentro del rango: el motor funcionan normalmente.
+   - Si el ángulo se sale del rango: se detiene el motor.
 4. Para restablecer el sistema tras una alerta: reinicia el Arduino Uno.
 
-## 👨‍💻 Autores
-
-- [Tu Nombre Aquí] – Desarrollador del sistema
-
-## 📝 Licencia
-
-Este proyecto está licenciado bajo la licencia MIT. Consulta el archivo [LICENSE](LICENSE) para más información.
