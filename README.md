@@ -70,35 +70,63 @@ graph TD;
 3. Configura los módulos Xbee con los mismos parámetros de red.
 4. Abre el monitor serial del Mega para establecer los límites de ángulo.
 
+## 🔧 Configuración de XBee con XCTU
 
-## Configurando Xbee con XCTU
-Ejecutar el entorno de XCTU para llevar a cabo a configuración del xbee conectado al arduino
-de control y el xbee conectado al arduino de potencia. 
-Seleccion de puertos
-<img width="519" height="392" alt="image" src="https://github.com/user-attachments/assets/0c7cbcae-fe21-42e2-8d78-1cc0012f9746" />
+Para establecer la comunicación entre los módulos XBee conectados al Arduino de **control** y al Arduino de **potencia**, es necesario configurarlos correctamente utilizando la herramienta **XCTU**.
 
+### 1. Selección de puertos
 
-Analisis de dispositivos xbee
-<img width="536" height="400" alt="image" src="https://github.com/user-attachments/assets/addfd755-5339-407f-a3bb-81f2c55b6f62" />
+Abre XCTU y selecciona los puertos donde están conectados los módulos XBee.
 
-Configuracion del coordinador
-Protocolo: 802.15.4
-ID PAN ID: 1001
-Coorinadotor Enable: Coodinator
-<img width="636" height="302" alt="image" src="https://github.com/user-attachments/assets/af4f2d07-5116-4047-b2bc-d0c0600cb255" />
+![Selección de puertos](https://github.com/user-attachments/assets/0c7cbcae-fe21-42e2-8d78-1cc0012f9746)
 
-Configuración del remoto
-Protocolo: 802.15.4
-ID PAN ID: 1001
-Coorinadotor Enable: End Device
+---
 
-<img width="689" height="368" alt="image" src="https://github.com/user-attachments/assets/05cfba60-f28f-447d-9673-c73f9f006728" />
+### 2. Análisis de dispositivos XBee
 
-Prueba terminal coordinador
-<img width="661" height="422" alt="image" src="https://github.com/user-attachments/assets/d34db32d-f3c7-4bb0-a400-013122d72869" />
+Haz clic en el ícono de lupa para escanear los dispositivos XBee conectados y verificar su disponibilidad.
 
-Prueba terminal remoto
-<img width="659" height="407" alt="image" src="https://github.com/user-attachments/assets/3ba15f64-ecea-4e36-9ad2-535868e88257" />
+![Análisis de dispositivos XBee](https://github.com/user-attachments/assets/addfd755-5339-407f-a3bb-81f2c55b6f62)
+
+---
+
+### 3. Configuración del Coordinador
+
+Configura uno de los módulos XBee como **coordinador** con los siguientes parámetros:
+
+- **Protocolo**: 802.15.4  
+- **PAN ID**: `1001`  
+- **Coordinador Enable**: `Coordinator`
+
+![Configuración del Coordinador](https://github.com/user-attachments/assets/af4f2d07-5116-4047-b2bc-d0c0600cb255)
+
+---
+
+### 4. Configuración del Nodo Remoto
+
+El segundo módulo XBee debe configurarse como **dispositivo final** con los siguientes parámetros:
+
+- **Protocolo**: 802.15.4  
+- **PAN ID**: `1001`  
+- **Coordinador Enable**: `End Device`
+
+![Configuración del Remoto](https://github.com/user-attachments/assets/05cfba60-f28f-447d-9673-c73f9f006728)
+
+---
+
+### 5. Pruebas de comunicación por terminal
+
+#### 🧪 Prueba terminal del Coordinador
+
+Envía datos desde el coordinador y verifica la respuesta del nodo remoto.
+
+![Terminal Coordinador](https://github.com/user-attachments/assets/d34db32d-f3c7-4bb0-a400-013122d72869)
+
+#### 🧪 Prueba terminal del Nodo Remoto
+
+Envía datos desde el nodo remoto y verifica la recepción en el coordinador.
+
+![Terminal Remoto](https://github.com/user-attachments/assets/3ba15f64-ecea-4e36-9ad2-535868e88257)
 
 
 ## 🚀 Uso del Sistema
