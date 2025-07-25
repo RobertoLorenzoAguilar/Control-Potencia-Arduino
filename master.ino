@@ -1,6 +1,5 @@
 /*******************************************************************************
   * @alumno         : Roberto Aguilar
- * @maestro        : Dr. Jesús Pacheco
  * @materia        : Cómputo Autónomo
   * @version        : 1.0
   * @date           : 08/05/25
