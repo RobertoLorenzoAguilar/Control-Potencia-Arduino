@@ -1,4 +1,4 @@
-# 🎯 Sistema Embebido para Monitoreo y Control de un Banco de Pruebas
+# Sistema Embebido para Monitoreo y Control de un Banco de Pruebas
 
 Este proyecto consiste en un sistema embebido diseñado para **monitorear y controlar un banco de pruebas**, prototipo de un sistema tipo *de control y potencia*. Utiliza dos placas Arduino (Mega y Uno) que se comunican mediante módulos Xbee para mantener el sistema operando dentro de límites seguros.
 
@@ -79,3 +79,6 @@ graph TD;
    - Si el ángulo se sale del rango: se detiene el motor.
 4. Para restablecer el sistema tras una alerta: reinicia el Arduino Uno.
 
+
+## Trabajo futuro desarrollar gemelo digital
+<img width="615" height="323" alt="image" src="https://github.com/user-attachments/assets/0c27875c-2437-4e97-aa35-e9db382cf8a8" />
