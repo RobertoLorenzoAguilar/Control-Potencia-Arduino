@@ -51,6 +51,13 @@ graph TD;
   Uno --> Pot[Potenciómetros]
 ```
 
+## Diagrama Electrónico
+## Potencia
+<img width="580" height="490" alt="image" src="https://github.com/user-attachments/assets/ad2cb0a2-cff6-401e-be38-f40488f12529" />
+## Control
+<img width="593" height="774" alt="image" src="https://github.com/user-attachments/assets/8da4f09a-8bc1-4447-a8e6-cd0d451c9c03" />
+
+
 ## ⚙️ Instalación y Configuración
 
 1. Conecta los componentes según el diagrama electrónico.
