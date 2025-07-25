@@ -27,15 +27,18 @@ El sistema está compuesto por dos Arduinos que colaboran de la siguiente manera
   Si se recibe una alerta, el motor se detienen inmediatamente como medida de seguridad.  
   Para reactivar el sistema tras una alerta: reinicia el Arduino Uno.
 
-## 🛠️ Tecnologías Utilizadas
+## 🛠️ Materiales necesarios para la practica
 
-- Arduino Mega 2560
-- Arduino Uno
-- Encoder rotatorio
-- Módulos Xbee
-- Motor Brushless
-- Potenciómetros
-- Lenguaje: C++ (Arduino)
+- 1 Tarjeta de desarrollo Arduino Uno “Potencia”.
+- 1 Tarjeta de desarrollo Mega “Control”.
+- 1 Adaptador para placa arduino xbee “Control”.
+- 2 Motor brushless RS2205.
+- 1 Encoder ACE-128.
+- 2 Baterias Lipo.
+- 2 Xbee PRO S2X.
+- 2 Controlador electrónico de velocidad ESC.
+- 2 potenciometros 10k.
+- 8 resistencias 1k “encoder”.
 
 ## 📡 Arquitectura del Sistema
 
