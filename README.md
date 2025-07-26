@@ -9,7 +9,6 @@ Este proyecto consiste en un sistema embebido diseñado para **monitorear y cont
 - [📡 Arquitectura del Sistema](#-arquitectura-del-sistema)
 - [⚙️ Instalación y Configuración](#️-instalación-y-configuración)
 - [🚀 Uso del Sistema](#-uso-del-sistema)
-- [👨‍💻 Autores](#-autores)
 - [📝 Licencia](#-licencia)
 
 ## 🎯 Descripción del Proyecto
